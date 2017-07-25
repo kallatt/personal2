@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+@import url('https://fonts.googleapis.com/css?family=Spectral');
+body {
+    background-image: url(http://www.no-zaku.com/background/wp-content/uploads/sites/9/2016/11/Nice-Free-Backgrounds-For-Websites.jpg);
+    margin: 0;
+    position: relative;
+    bottom: 0;
+}
+
+@media (min-width:500px) {
+    .nav-items {
+        display: flex;
+        list-style-type: none;
+        margin-top: -10px;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        font-size: 150%;
+        width: 100%;
+        height: 75px;
+        z-index: 12;
+        /*position:fixed;*/
+        /*justify-content:center;*/
+    }
+    .nav-items li {
+        /*float:left;*/
+        margin-right: 50px;
+    }
+    li a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        height: 50px;
+        line-height: 80px;
+        white-space: nowrap;
+        background-color: white;
+        list-style-type: none;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .table {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+    .table-cell {
+        margin-top: -237px;
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*justify-content: flex-end;*/
+        /*align-items: center;*/
+        top: 0;
+        right: 60%;
+    }
+    .all {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .project {
+        width: 20%;
+    }
+    .pro {
+        width: 100%;
+    }
+    footer {
+        background-color: white;
+        font-size: 150%;
+        width: 100%;
+        height: 120px;
+        z-index: 12;
+        position: absolute;
+        margin-top: 20px;
+        /*margin:0;*/
+        /*clear: both;*/
+        /*position: relative;*/
+        /*z-index: 10;*/
+        /*height: 4em;*/
+    }
+    .snap {
+        color: #FFFB00;
+    }
+    .twit {
+        color: #55A8ED;
+    }
+    .information {
+        color: black;
+        font-size: 25px;
+        margin-top: -40px;
+    }
+    iframe[id^='twitter-widget-'] {
+        width: 18.75em !important;
+    }
+    i {
+        margin-top: -60px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+
+/* 
+6) Add media query for mobile styles
+*/
+
+@media (max-width:450px) {
+    .textMenu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: -.1px;
+    }
+    .logo {
+        display: none;
+    }
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    /* 
+7) Add mobile style for nav list -- items in a column
+*/
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        height: 50px;
+        line-height: 50px;
+        white-space: nowrap;
+        background-color: white;
+        width: 100%;
+        margin-left: -40px;
+    }
+    li img {
+        margin: auto;
+    }
+    /* 
+8) Display the button on mobile
+*/
+    .nav-toggle {
+        display: inline;
+    }
+    /* 
+9) Add a class that hides the nav items on mobile. This is an additional class because we are going to use it to sometimes show the nav and sometimes hide it
+*/
+    .mobile-nav-hidden {
+        display: none;
+    }
+    .nav-items {
+        list-style-type: none;
+        align-items: center;
+        width: 100%;
+    }
+    .all {
+        display: block;
+    }
+    .project {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pro {
+        width: 100%;
+    }
+    footer {
+        background-color: white;
+        font-size: 150%;
+        width: 100%;
+        height: 25%;
+        z-index: 12;
+        position: absolute;
+        margin-top: 20px;
+    }
+    .snap {
+        color: #FFFB00;
+    }
+    .twit {
+        color: #55A8ED;
+    }
+    .icon {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .information {
+        color: black;
+        font-size: 25px;
+        margin-top: -10px;
+    }
+    iframe[id^='twitter-widget-'] {
+        width: 18.75em !important;
+    }
+    i {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .table-cell {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.6875em;
+    margin-bottom: -20px;
+    font-family: 'Spectral', serif;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration: underline;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.875em;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    font-size: 2.8125em;
+    color: white;
+}
+
+h5 {
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    color: black;
+    font-size: 1.5625em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5625em;
+    font-family: Garamond;
+    color: white;
+}
+
+a {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    font-family: Times New Roman;
+}
+
+a:hover {
+    color: red;
+}
+
+.school {
+    font-size: 1.5625em;
+}
+
+ul {
+    font-size: 1.5625em;
+}
+
+.abc {
+    text-align: center;
+    list-style-type: none;
+    /*list-style-positiodn: inside;*/
+    color: white;
+}
+.active {
+    color:red;
+}
